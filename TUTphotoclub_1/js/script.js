@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 $(function($) {
     $('.bg-slider').bgSwitcher({
-        images: ['img/_DSC0941.JPG','img/_DSC1009.JPG','img/_DSC1549.JPG'],
+        images: ['img/DSC0941.JPG','img/DSC1009.JPG','img/DSC1549.JPG'],
         effect: "fade",
         easing: "swing",  // 切り替える背景画像を指定
     });
