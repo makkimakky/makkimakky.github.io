@@ -17,7 +17,6 @@ $(function($) {
 });// http://bashalog.c-brains.jp/14/07/17-095900.php
 
 
-});// http://bashalog.c-brains.jp/14/07/17-095900.php
 
 // $(window).resize(function(){
 //     var x = $(window).width();
