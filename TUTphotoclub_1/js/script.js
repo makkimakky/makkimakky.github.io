@@ -14,4 +14,4 @@ $(function($) {
         effect: "fade",
         easing: "swing",  // 切り替える背景画像を指定
     });
-});// http://bashalog.c-brains.jp/14/07/17-095900.php
+});//test
