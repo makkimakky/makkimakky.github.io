@@ -1,0 +1,84 @@
+
+/* ナビゲーション部分 */
+#navigation{
+  background: #444444;
+}
+
+#header_rogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 20px 50px 20px 50px;
+}
+
+ #nav_hontai{
+  overflow: hidden;
+}
+
+#nav_hontai li{
+  float: left;
+  list-style: none;
+  width: 25%;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  transition-duration: 0.5s;
+}
+
+#nav_hontai li:hover{
+  color: #000000;
+  background: #FFFFFF;
+}
+
+#nav_hontai a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#nav_hontai a:hover{
+  color: #000000;
+}
+
+/* コンテンツ部分 */
+#contents{
+  margin-top: 20px;
+　margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+
+/* ギャラリー部分 */
+#gallery{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  background: rgba(0,0,0,0.5);
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+
+
+#gallery_photo{
+    overflow: hidden;
+
+}
+
+.gallery_samune{
+    float:left;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 30px;
+    padding:7px;
+    border:1px solid #ccc;
+    background:#fff;
+    box-shadow: 1px 3px 5px 3px rgba(20,20,20,0.2);
+    transition: 0.5s;
+}
+
+
+#footer{
+  text-align: center;
+}

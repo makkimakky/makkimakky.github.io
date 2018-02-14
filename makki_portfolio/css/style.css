@@ -1,0 +1,182 @@
+/* 全体的にいろいろ */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body{
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+}
+
+/* 文字の装飾 */
+h1 {
+  position: relative;
+  text-align: center;
+  color: #333333;
+}
+h1 span {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin: 0 2.5em;
+  padding: 0 1em;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+h1::before {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #CCCCCC;
+}
+
+h2{
+  border-left: solid 5px #2ECC71;
+  padding-left: 10px;
+}
+
+h3{
+  border-bottom: solid 1px #CCCCCC;
+  /* padding-bottom: 5px; */
+}
+
+p{
+  color: #333333;
+}
+
+/* ヘッダー部分 */
+#header{
+  background: #888888;
+}
+
+#header_logo{
+  float: left;
+  width: 30%;
+  height: auto;
+}
+
+#menu{
+  float: right;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+#menu ul{
+
+}
+
+#menu li {
+  float: left;
+  list-style: none;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#menu a{
+  color: #333333;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+}
+#menu a::before,
+#menu a::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: #2ECC71;
+  transition: .3s;
+}
+
+#menu a::before {
+  top: 0;
+  left: 0;
+}
+
+#menu a::after {
+  bottom: 0;
+  right: 0;
+}
+
+#menu a:hover::before,
+#menu a:hover::after {
+  width: 100%;
+}
+
+
+/* コンテンツ部分 */
+#contents{
+  clear: both;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+/* 作品集関係 */
+
+.works-img{
+  width: 30%;
+  height: auto;
+}
+
+.works-img-main{
+  width: 60%;
+  height: auto;
+}
+
+.works-samune{
+  float: left;
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
+}
+
+.works-samune-effect {
+	width: 200px;
+	height:	200px;
+	overflow:	hidden;
+	margin:	10px 8px 10px 16px;
+	position:	relative;	/* 相対位置指定 */
+  float: left;
+}
+.works-samune-effect .caption {
+	font-size: 130%;
+	text-align: center;
+	padding-top:	80px;
+	color:	#FFFFFF;
+}
+.works-samune-effect a{
+  text-decoration: none;
+}
+.works-samune-effect .mask {
+	width: 100%;
+	height:	100%;
+	position:	absolute;	/* 絶対位置指定 */
+	top: 0;
+	left:	0;
+	opacity: 0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.7);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.works-samune-effect:hover .mask {
+	opacity:	1;	/* マスクを表示する */
+}
+
+figure{
+  margin-top: 20px;
+}
+
+/* フッター関係 */
+#footer{
+  text-align: center;
+  background: #333333;
+}

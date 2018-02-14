@@ -1,0 +1,54 @@
+body{
+  text-align: center;
+  background-image: url("../img/background.png");
+  background-attachment: fixed;
+}
+
+img{
+  width: 70%;
+}
+*/
+
+ul{
+  visibility: hidden;
+}
+
+li{
+  font-size: 25px;
+  width: 300px;
+  height: 130px;
+  padding-top: 75px;
+  list-style: none;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFFFFF;
+  box-shadow:2px 2px 10px -2px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+li:hover{
+  background-color: #E8E8E8;
+}
+
+div.link{
+  float:left;
+  width: 33%;
+  /*margin: 10px;*/
+}
+
+a{
+  text-decoration: none;
+}
+
+#menu{
+  margin: 0 auto;
+}
+
+/*メニューのアニメーション操作*/
+.menu-animation{
+  -webkit-animatin-duration: 1s;
+  animation-delay:1s;
+}

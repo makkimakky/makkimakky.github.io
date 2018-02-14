@@ -1,0 +1,137 @@
+/*いろいろと*/
+/*画像が大きすぎた場合*/
+.big-img{
+  width: 30%;
+}
+
+body{
+     font-family: Helvetica , "游ゴシック" , "Yu Gothic" , sans-serif;
+     width: 1200px;
+   /*background: #D3D3D3;*/}
+
+#home{
+       background: linear-gradient(#05FBFF, #1D62F0 ) fixed;
+}
+
+#AS{
+       background: linear-gradient(#9FF781, #58D3F7 ) fixed;
+}
+
+#NA{
+       background: linear-gradient(#F8E0E0, #F78181 ) fixed;
+}
+
+#St{
+       background: linear-gradient(#FAFAFA, #6E6E6E ) fixed;
+}
+
+#Zee{
+       background: linear-gradient(#FFFFFF, #2ECCFA ) fixed;
+}
+
+#Chi{
+       background: linear-gradient(#FAFAFA, #9F988F ) fixed;
+}
+
+h2{
+  text-align: center;
+}
+
+
+/*左側*/
+
+#title {
+  float: left;
+  width: 50%;
+  height: 500px;
+}
+
+#sakuhin-big{
+position: absolute;
+top:30px;
+left: 100px;
+}
+
+#sakuhin-img{
+  position: absolute;
+  top: 50px;
+  left: 120px;
+  overflow: hidden;
+}
+
+#title_contents h1{
+  font-size: 40px;
+  position: absolute;
+  left: 10%;
+  top: 500px;
+  display: block;
+  opacity: 0;
+  animation: fadeIn 2s ease 0s 1 normal forwards;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal forwards;
+}
+
+#title_contents h4{
+  margin-top: 400px;
+  margin-left: 100px;
+  display: block;
+  opacity: 0;
+  animation: fadeIn 2s ease 2s 1 normal forwards;
+  -webkit-animation: fadeIn 2s ease 2s 1 normal forwards;
+}
+
+
+/*右側*/
+
+#selector{
+  float: left;
+  width: 40%;
+  height: 500px;
+  padding: 40px;
+  margin-left: 30px;
+  background-color: rgba(105,105,105,0.7);
+/*animation: fadeIn 2.5s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2.5s ease 0s 1 normal;*/
+}
+
+
+
+#selector p{
+  float: left;
+  margin: 55px;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  /*ページが開いたときの*/
+  animation: fadeIn 2.5s ease 1s 1 normal forwards;
+  -webkit-animation: fadeIn 2s ease 1s 1 normal forwards;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+
+#selector p:hover{
+-webkit-transform: scale( 1.2 );
+-moz-transform: scale( 1.2 );
+}
+
+
+@keyframes fadeIn {
+    0% {opacity: 0;
+        top: 300px;}
+    100% {opacity: 1;
+          top: 200px;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    top: 300px
+  }
+  100% {
+    opacity: 1;
+    top: 200px
+  }
+
+}
+
+
+/*大きすぎる画像に対して*/

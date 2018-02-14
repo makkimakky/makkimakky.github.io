@@ -1,0 +1,371 @@
+/*全体的なやつ*/
+html {
+    height: 100%;
+}
+
+body{
+  height: 100%;
+  margin: 0;
+  background-size: 100%;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' ;
+  }
+@media(max-width: 600px){
+  body{
+    background: #444444;
+  }
+}
+
+.bg-slider{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-position:center center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+}
+@media(max-width: 600px){
+  .bg-slider{
+    object-fit: cover;
+    width: 100%;
+    height: 29%;
+    position: relative;
+    /* background-position:center center; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+  }
+}
+
+
+.bg-slider_top{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-position:center center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+}
+@media(max-width: 600px){
+  .bg-slider_top{
+    object-fit: cover;
+    width: 100%;
+    height: 30%;
+    position: relative;
+    /* background-position:center center; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+  }
+}
+
+
+h1{
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+h2{
+  border-bottom: solid 1px #FFFFFF;
+}
+
+/*アニメーション関係*/
+
+.title_animation{
+  animation-delay: 1s;
+}
+
+.menu_animation{
+  animation-delay:2s;
+}
+
+.menu_animation1{
+  animation-delay:2.2s;
+}
+
+.menu_animation2{
+  animation-delay:2.4s;
+}
+
+.menu_animation3{
+  animation-delay:2.6s;
+}
+
+
+/*メニュー部分*/
+#header_rogo_top{
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+#header_rogo{
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+@media(max-width:600px){
+  #header_rogo{
+      display: block;
+      width: 50%;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+#navigation{
+    position: relative;
+    float: left;
+    background: rgba(0, 0, 0, 0.5);
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+@media(max-width: 600px){
+  #navigation{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+}
+
+#navigation_top{
+    position: relative;
+    float: left;
+    background: rgba(0, 0, 0, 0.5);
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+@media(max-width: 600px){
+  #navigation_top{
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+}
+
+#nav_hontai{
+}
+@media(max-width: 600px){
+  #nav_hontai{
+    display: none;
+  }
+}
+
+#menu_button{
+  display: none;
+}
+@media(max-width: 600px){
+  #menu_button{
+    text-align: center;
+    display: block;
+    border-radius: 1px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.5);
+    color: #000000;
+  }
+}
+
+li{
+    list-style: none;
+    color: #FFFFFF;
+    margin: 0px 35px 20px 0px;
+    padding: 10px 5px;
+    border: 1px solid #FFFFFF;
+    text-align: center;
+    transition-duration: 0.5s;
+    font-family: 'Lato', sans-serif;
+}
+
+
+li:hover{
+    background: #FFFFFF;
+}
+
+li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+li a:hover{
+   color: #000000;
+}
+
+#top_nav{
+
+}
+@media(max-width: 600px){
+  #top_nav{
+      list-style: none;
+      color: #FFFFFF;
+      margin: 0px 35px 20px 0px;
+      padding: 35px 5px;
+      border: 1px solid #FFFFFF;
+      text-align: center;
+      transition-duration: 0.5s;
+      font-size: 40px;
+  }
+}
+
+/*コンテンツ部分*/
+
+#contents{
+    float: right;
+    width: 70%;
+    height: 80%;
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    border-radius: 10px;
+    overflow: scroll;
+}
+@media(max-width:600px){
+  #contents{
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  　margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    clear: both;
+  }
+}
+
+#contents::-webkit-scrollbar{
+    width: 12px;
+}
+
+#contents::-webkit-scrollbar-track{
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 2px #777;
+}
+
+#contents::-webkit-scrollbar-thumb{
+    background: #aaa;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+#contents_clubname{
+    width: 60%;
+    float:right;
+    margin-top: 300px;
+    margin-left: 70px;
+    height: 550px;
+    padding: 20px;
+    color: rgba(255,255,255, 0.5);
+  }
+
+#contents_clubname h1{
+    font-size: 100px;
+    line-height: 5px;
+    text-align: left;
+}
+
+.clubname_animation1{
+    animation-delay: 2.5s;
+    animation-duration: 3s;
+}
+
+.clubname_animation2{
+    animation-delay: 3s;
+    animation-duration: 3s;
+}
+
+.clubname_animation3{
+    animation-delay: 3.5s;
+    animation-duration: 3s;
+}
+
+
+
+
+/*ギャラリー周り*/
+.body_gallery{
+    background: #444444;
+}
+
+#gallery{
+    float:right;
+    width: 75%;
+    height: 70%;
+    color: #FFFFFF;
+    overflow:
+  }
+@media(max-width: 600px) {
+  #gallery{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    background: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    border-radius: 10px;
+  }
+}
+
+
+
+.gallery_samune{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: box;
+    box-pack: justify;
+    border:1px solid #ccc;
+    background:#fff;
+    box-shadow: 1px 3px 5px 3px rgba(20,20,20,0.2);
+    transition: 0.5s;
+}
+@media(max-width: 600px){
+  .gallery_samune{
+      float:left;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin: 30px;
+      padding:7px;
+      border:1px solid #ccc;
+      background:#fff;
+      box-shadow: 1px 3px 5px 3px rgba(20,20,20,0.2);
+      transition: 0.5s;
+  }
+}
+
+.gallery_samune:hover{
+    width: 220px;
+    height: 220px;
+    box-shadow: 2px 2px 2px 2px rgba(20,20,20,0.2);
+    transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+}
+
+/*フッター*/
+#footer{
+    text-align: center;
+    background: #444444;
+    color: #FFFFFF;
+    clear: both;
+}
