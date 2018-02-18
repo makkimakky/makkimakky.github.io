@@ -43,8 +43,11 @@ h2{
 }
 
 h3{
-  border-bottom: solid 1px #CCCCCC;
-  /* padding-bottom: 5px; */
+  display: block;
+  margin-top: 30px;
+  padding-left: 10px;
+  border-top: solid 1px #2ECC71;
+  border-bottom: solid 1px #2ECC71;
 }
 
 p{
@@ -129,8 +132,16 @@ p{
 /* 作品集関係 */
 
 .works-img{
-  display: block;
-  width: 30%;
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.works-img-sma{
+  display: inline-block;
+  width: 20%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -187,8 +198,18 @@ p{
 
 figure{
   margin-top: 20px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+figcaption{
+  max-width: 100%;
+}
+
+figcaption::before{
+  content: "▲ ";
+}
 /* フッター関係 */
 #footer{
   text-align: center;
