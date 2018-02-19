@@ -206,6 +206,7 @@ figure{
 
 figcaption{
   max-width: 100%;
+  color: #999999;
 }
 
 figcaption::before{
