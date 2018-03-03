@@ -8,6 +8,7 @@
 body{
   font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
   margin: 0;
+
 }
 
 /* 文字の装飾 */
@@ -54,66 +55,93 @@ p{
   color: #333333;
 }
 
+/* トップページ */
+#top_page{
+background-image: url("../img/background_image.png");
+}
+
+#top_cotents{
+  position: relative;
+}
+
+#top_logo{
+  width: 90%;
+}
+
+#top_menu{
+  position: absolute;
+  top: 300px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
+  width: 40%;
+  height: auto;
+}
+
+#top_nav{
+margin-top: 50px;
+}
+
+#top_nav ul{
+
+}
+
+#top_nav li {
+  float: left;
+  list-style: none;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+#top_nav li+li{
+  margin-left: 150px;
+}
+
+#top_nav a{
+  color: #333333;
+  text-decoration: none;
+}
+
 /* ヘッダー部分 */
 #header{
 
 }
 
 #header_logo{
-  float: left;
+  display: block;
   width: 30%;
   height: auto;
-  margin-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
 #menu{
-  float: right;
-  margin-right: 30px;
+  text-align:center;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 #menu ul{
-
+  display: inline-block;
 }
 
 #menu li {
   float: left;
   list-style: none;
-  padding-top: 10px;
   padding-right: 20px;
   padding-left: 20px;
+}
+
+#menu li + li{
+  margin-left: 20px;
 }
 
 #menu a{
   color: #333333;
   text-decoration: none;
-  position: relative;
-  display: inline-block;
-  transition: .3s;
-}
-#menu a::before,
-#menu a::after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 1px;
-  background-color: #2ECC71;
-  transition: .3s;
-}
-
-#menu a::before {
-  top: 0;
-  left: 0;
-}
-
-#menu a::after {
-  bottom: 0;
-  right: 0;
-}
-
-#menu a:hover::before,
-#menu a:hover::after {
-  width: 100%;
 }
 
 

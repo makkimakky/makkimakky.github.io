@@ -1,0 +1,118 @@
+/*ややこしいのでここにまとめました*/
+.yayakosiya{
+  clear: both;
+}
+
+img{
+  width: 100%;
+}
+
+/*本文装飾*/
+h1{
+  border-left: 10px solid #2FCDB4;
+  border-bottom: 2px solid #2FCDB4;
+  padding-left: 10px;
+}
+
+h2{
+  border-bottom: 1px solid #5a5a5a;
+  padding-left: 10px;
+}
+
+h3{
+  border-left: 2px solid #2FCDB4;
+  padding-left: 10px;
+}
+
+/*ナビゲーションヘッダー*/
+
+#navigation{
+  background: #2FCDB4;
+}
+
+#navigation:after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0.1px;
+  font-size: 0.1em;
+  line-height: 0;
+  clear: both;
+}/*clearfix*/
+
+
+#title{
+  float:left;
+}
+
+#title_sub{
+  float: right;
+}
+
+/*コンテンツ*/
+#contents{
+  margin-bottom: 70px;
+}
+
+.samune{
+  width: 80%;
+}
+
+.article{
+  border-bottom: 1px dashed #d5d5d5;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+
+}
+
+.article:after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0.1px;
+  font-size: 0.1em;
+  line-height: 0;
+  clear: both;
+} /*clearfix*/
+
+.before_button{
+  float: left;
+}
+
+.after_button{
+  float: right;
+}
+
+/*サイドバー*/
+.sidebar_css{
+  margin-right: 30px;
+  margin-bottom: 31px;
+  padding: 10px;
+  border: 1px solid #d5d5d5;
+}
+
+#sns-icon img{
+  width: 50%;
+  height: auto;
+}
+
+#sns-icon:after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0.1px;
+  font-size: 0.1em;
+  line-height: 0;
+  clear: both;
+}  /*clearfix*/
+
+
+/*フッター*/
+#footer{
+  background: #2FCDB4;
+}
+
+/*記事部分*/
+#comment-form{
+  margin-top: 100px;
+}
