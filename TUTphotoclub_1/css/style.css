@@ -159,11 +159,6 @@ li{
     list-style: none;
     color: #FFFFFF;
     margin: 0px 35px 20px 0px;
-    padding: 10px 5px;
-    border: 1px solid #FFFFFF;
-    text-align: center;
-    transition-duration: 0.5s;
-    font-family: 'Lato', sans-serif;
 }
 
 
@@ -172,8 +167,14 @@ li:hover{
 }
 
 li a{
+    display: block;
     text-decoration: none;
     color: #FFFFFF;
+    padding: 10px 5px;
+    border: 1px solid #FFFFFF;
+    text-align: center;
+    transition-duration: 0.5s;
+    font-family: 'Lato', sans-serif;
 }
 
 li a:hover{
