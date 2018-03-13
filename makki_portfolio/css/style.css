@@ -158,6 +158,10 @@ margin-top: 50px;
   clear: both;
 }
 
+.contents-animation{
+  animation-delay: 0.5s;
+}
+
 /* 作品集関係 */
 
 .works-img{
