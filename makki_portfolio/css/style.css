@@ -8,7 +8,6 @@
 body{
   font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
   margin: 0;
-
 }
 
 /* 文字の装飾 */
@@ -42,6 +41,15 @@ h2{
   padding-left: 10px;
   clear: both;
 }
+@media(max-width: 600px){
+  h2{
+    border-left: solid 0px #2ECC71;
+    text-align: center;
+    border-bottom: solid 2px #2ECC71;
+    clear: both;
+  }
+}
+
 
 h3{
   display: block;
@@ -117,29 +125,92 @@ margin-top: 50px;
   margin-right: auto;
   margin-top: 20px;
 }
+@media(max-width: 600px){
+  #header_logo{
+    width: 80%;
+  }
+}
 
 #menu{
   text-align:center;
   margin-top: 30px;
   margin-bottom: 20px;
 }
+@media(max-width: 600px){
+  #menu{
+    margin: 0;
+  }
+}
+
+#menu_button{
+ font-size: 30px;
+ background: #DDDDDD;
+ text-align: center;
+}
+@media(min-width: 600px){
+  #menu_button{
+    display: none;
+  }
+}
+@media(max-width: 600px){
+  #menu_button{
+
+  }
+}
+
+nav{
+
+}
+@media(max-width: 600px){
+  nav{
+    display: none;
+  }
+}
 
 #menu ul{
   display: inline-block;
+  margin-left: -40px;
+}
+@media(max-width: 600px){
+  #menu ul{
+    display: inline;
+    margin-left: -40px;
+  }
 }
 
 #menu li {
   float: left;
   list-style: none;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 10px 20px 10px 20px;
+}
+@media(max-width: 600px){
+  #menu li{
+    float: none;
+    border: solid 1px #FFFFFF;
+    background: #DDDDDD;
+    list-style: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 22px;
+  }
+  #menu li:hover{
+    background-color: #FFFFFF;
+  }
 }
 
 #menu li + li{
   margin-left: 20px;
 }
+@media(max-width: 600px){
+  #menu li + li{
+    margin-left: 0px;
+  }
+}
+
 
 #menu a{
+  display: block;
+  width: 100%;
   color: #333333;
   text-decoration: none;
 }
@@ -163,6 +234,17 @@ margin-top: 50px;
 }
 
 /* 作品集関係 */
+
+.works{
+
+}
+@media(max-width: 600px){
+.works{
+  margin-bottom: 50px;
+  width: 200px;
+  float: left;
+}
+}
 
 .works-img{
   display: inline-block;
@@ -205,6 +287,12 @@ margin-top: 50px;
   float: left;
   border: solid 1px #DDDDDD;
 }
+@media(max-width: 600px){
+  .works-samune-effect{
+    margin: 0;
+    float: none;
+  }
+}
 .works-samune-effect .caption {
 	font-size: 130%;
 	text-align: center;
@@ -227,6 +315,16 @@ margin-top: 50px;
 }
 .works-samune-effect:hover .mask {
 	opacity:	1;	/* マスクを表示する */
+}
+
+.title_res{
+  display: none;
+}
+@media(max-width: 600px){
+  .title_res{
+   display: block;
+   margin: 10px;
+  }
 }
 
 figure{
