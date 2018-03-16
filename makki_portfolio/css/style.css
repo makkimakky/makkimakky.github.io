@@ -233,6 +233,21 @@ nav{
   animation-delay: 0.5s;
 }
 
+/* 自己紹介関係 */
+.img-samune{
+  width: 30%;
+  height: 30%;
+}
+
+.about_main{
+  display: block;
+  width: 65%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 /* 作品集関係 */
 
 .works{
