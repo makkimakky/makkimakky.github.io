@@ -255,9 +255,9 @@ nav{
 }
 @media(max-width: 600px){
 .works{
-  margin-bottom: 50px;
+  display: block;
+  margin:0px auto 50px auto;
   width: 200px;
-  float: left;
 }
 }
 
