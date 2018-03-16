@@ -205,6 +205,11 @@ nav{
   list-style: none;
   padding: 10px 20px 10px 20px;
 }
+#menu li:hover{
+  padding: 10px 40px 10px 40px;
+  background: #DDDDDD;
+  transition-duration: 0.5s;
+}
 @media(max-width: 600px){
   #menu li{
     float: none;
@@ -236,6 +241,9 @@ nav{
   color: #333333;
   text-decoration: none;
 }
+
+
+
 
 
 /* コンテンツ部分 */
