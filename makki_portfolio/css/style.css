@@ -8,6 +8,7 @@
 body{
   font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
   margin: 0;
+  /* background: #DDDDDD; */
 }
 
 #page-top {
@@ -25,10 +26,12 @@ body{
   color: #FFFFFF;
   text-decoration: none;
   text-align: center;
+  box-shadow: 2px 5px 5px #DDDDDD;
+  transition: .3s;
 }
-
 #page-top a:hover {
   text-decoration: none;
+  box-shadow: 1px 1px #DDDDDD;
   opacity: 0.7;
 }
 
@@ -46,13 +49,13 @@ h1::after {
   z-index: -1;
   content: '';
   width: 100%;
-  height: 10px;
-  background-color: #DDDDDD;
+  height: 4px;
+  background-color: #2ECCC0;
 }
 
 h2{
-  border-left: solid 5px #2ECC71;
-  padding-left: 10px;
+  border-left: solid 10px #2ECC71;
+  padding: 5px 0px 5px 10px;
   clear: both;
 }
 @media(max-width: 600px){
@@ -67,7 +70,7 @@ h2{
 
 h3{
   display: block;
-  margin-top: 30px;
+  margin-top: 50px;
   padding-left: 10px;
   border-top: solid 1px #2ECC71;
   border-bottom: solid 1px #2ECC71;
@@ -159,6 +162,7 @@ margin: 0;
  font-size: 30px;
  background: #DDDDDD;
  text-align: center;
+
 }
 @media(min-width: 600px){
   #menu_button{
@@ -172,7 +176,8 @@ margin: 0;
 }
 
 nav{
-
+  margin-left: auto;
+  margin-right: auto;
 }
 @media(max-width: 600px){
   nav{
@@ -182,7 +187,7 @@ nav{
 
 #menu ul{
   display: inline-block;
-  margin-left: -40px;
+  margin-left: -100px;
 }
 @media(max-width: 600px){
   #menu ul{
@@ -194,21 +199,13 @@ nav{
 #menu li {
   float: left;
   list-style: none;
-  padding: 10px 20px 10px 20px;
-}
-#menu li:hover{
-  padding: 10px 40px 10px 40px;
-  background: #DDDDDD;
-  transition-duration: 0.5s;
-}
+  }
 @media(max-width: 600px){
   #menu li{
     float: none;
     border: solid 1px #FFFFFF;
     background: #DDDDDD;
     list-style: none;
-    padding-right: 20px;
-    padding-left: 20px;
     font-size: 22px;
   }
   #menu li:hover{
@@ -217,7 +214,7 @@ nav{
 }
 
 #menu li + li{
-  margin-left: 20px;
+  margin-left: 100px;
 }
 @media(max-width: 600px){
   #menu li + li{
@@ -231,8 +228,22 @@ nav{
   width: 100%;
   color: #333333;
   text-decoration: none;
+  padding: 10px 30px 10px 30px;
+  transition-duration: 0.5s;
+  text-align: center;
+  border: solid 1px #DDDDDD;
+  box-shadow: 0px 3px 10px #DDDDDD;
 }
-
+#menu a:hover{
+  padding: 10px 40px 10px 40px;
+  background: #DDDDDD;
+  box-shadow: 0px 3px 15px #DDDDDD;
+}
+@media(max-width: 600px){
+  #menu a{
+    padding: 10px 0px 10px 0px;
+  }
+}
 
 
 
@@ -244,6 +255,17 @@ nav{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+  background: #FFFFFF;
+  padding: 5px 40px;
+  box-shadow: 0px 0px 15px #DDDDDD;
+}
+#contents:hover{
+  box-shadow: 0px 0px 5px #DDDDDD;
+}
+@media(max-width: 600px){
+  #contents{
+    padding: 5px 10px;
+  }
 }
 
 #contents small{
