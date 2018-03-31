@@ -70,10 +70,12 @@ h2{
 
 /*メニュー部分*/
 #header_rogo_top{
+    display: block;
     width: 90%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 55px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #header_rogo{
@@ -176,7 +178,6 @@ li a{
     transition-duration: 0.5s;
     font-family: 'Lato', sans-serif;
 }
-
 li a:hover{
    color: #000000;
 }
@@ -188,8 +189,8 @@ li a:hover{
   #top_nav{
       list-style: none;
       color: #FFFFFF;
-      margin: 0px 35px 20px 0px;
       padding: 35px 5px;
+      border: 1px solid #FFFFFF;
       text-align: center;
       transition-duration: 0.5s;
       font-size: 40px;
