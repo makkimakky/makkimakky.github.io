@@ -1,0 +1,67 @@
+/* 全体的なやつ */
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	margin: 0;
+}
+
+/* トップ */
+.article_bar{
+	float: left;
+	width: 20%;
+	height: 100%;
+	transition: 1s;
+}
+.article_bar:hover{
+	box-shadow: 0px 3px 15px #555555;
+}
+
+.top_samune{
+	width: 240px;
+	height: 100%;
+	object-fit: cover;
+	transition: 1s;
+}
+.top_samune:hover{
+	width: 252px;
+	object-position: right;
+}
+
+.bar1{
+	animation-delay: 1s;
+}
+
+.bar2{
+	animation-delay: 1.2s;
+}
+
+.bar3{
+	animation-delay: 1.4s;
+}
+
+.bar4{
+	animation-delay: 1.6s;
+}
+
+.bar5{
+	animation-delay: 1.8s;
+}
+/* 単体ページ用 */
+.common_screen{
+	position:absolute;
+	width:50%;
+	height:100%;
+}
+
+.left_screen{
+	left:0;
+  background: #666666;
+}
+
+.right_screen{
+	right:0;
+	overflow-y:scroll;
+}
