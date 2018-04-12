@@ -9,6 +9,14 @@ body{
 }
 
 /* トップ */
+#header{
+	text-align: center;
+}
+
+#top_menu{
+	height: 100%;
+}
+
 .article_bar{
 	float: left;
 	width: 20%;
@@ -19,15 +27,15 @@ body{
 }
 
 .top_samune{
-	width: 240px;
+	width: 80%;
 	height: 100%;
 	object-fit: cover;
 	transition: 1s;
 }
 .top_samune:hover{
-	width: 252px;
+	width: 100%;
 	box-shadow: 0px 3px 15px #555555;
-	object-position: right;
+	object-position: 75% 50%;
 }
 
 .bar1{
