@@ -60,16 +60,44 @@ body{
 /* 単体ページ用 */
 .common_screen{
 	position:absolute;
-	width:50%;
 	height:100%;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .left_screen{
+	width: 55%;
 	left:0;
-  background: #666666;
 }
 
 .right_screen{
+	width: 45%;
 	right:0;
-	overflow-y:scroll;
+	text-align: center;
+	color: #888888;
+}
+
+
+.slick-prev:before,
+.slick-next:before {
+    color: #000000;
+}
+
+.slick-next {
+    /* right: 10px; */
+    z-index: 99;
+}
+.slick-prev {
+     /* left: 10px; */
+    z-index: 100;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #FFFFFF;
+}
+
+img {
+    max-width: 100%;
+     height: auto;
 }
