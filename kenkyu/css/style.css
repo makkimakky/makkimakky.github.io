@@ -1,0 +1,41 @@
+/* サイドバー */
+#sidebar{
+  float: left;
+  width: 30%;
+}
+
+#page_logo{
+
+}
+
+#menu{
+
+}
+
+#menu li{
+  list-style: none;
+  text-decoration: none;
+  margin: 20px 0px;
+}
+
+
+/* コンテンツ部分 */
+#contents{
+  float: right;
+  width: 60%;
+  margin-right: 100px;
+}
+
+#top_kari{
+  width: 100%;
+}
+
+/* トップ個別リンク */
+#samune{
+  float: left;
+  clear: both;
+}
+
+#article_sent{
+  float: right;
+}
