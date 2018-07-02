@@ -1,49 +1,290 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Kikuchi Labo</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<div id="sidebar">
-  <h1 id="page_logo">Kikuchi<br>labo</h1>
-  <div id="menu">
-    <ul>
-      <li>ホーム</li>
-      <li>研究プロジェクト</li>
-      <li>業績一覧</li>
-      <li>授業に関して</li>
-    </ul>
-  </div>
-</div>
-<div id="contents">
-  <img id="top_kari" src="img/top_kari.png" alt="">
-  <div id="article_card">
-    <div id="samune"><img src="img/dummy_samune.png" alt=""></div>
-    <div id="article_sent">
-      <h2>タイトル</h2>
-      <p>文章文章文章文章あああああああああああああああああああ</p>
-      <a href="">続きはこちら</a>
-    </div>
-  </div>
-  <div id="article_card">
-    <div id="samune"><img src="img/dummy_samune.png" alt=""></div>
-    <div id="article_sent">
-      <h2>タイトル</h2>
-      <p>文章文章文章文章あああああああああああああああああああ</p>
-      <a href="">続きはこちら</a>
-    </div>
-  </div>
-  <div id="article_card">
-    <div id="samune"><img src="img/dummy_samune.png" alt=""></div>
-    <div id="article_sent">
-      <h2>タイトル</h2>
-      <p>文章文章文章文章あああああああああああああああああああ</p>
-      <a href="">続きはこちら</a>
-    </div>
-  </div>
+	<meta charset="utf-8">
+	<title>Kikuchi Lab.</title>
+	<meta name="description" content="このページは，東京工科大学メディア学部菊池研（Computer Graphics，Contents Design,
+	etc.）のページです．菊池研・研究プロジェクトの「Procedural Animation（プロシージャルアニメーション）」，「Contents Design Science（コンテンツデザインサイエンス）」を紹介します．また，研究室の活動や菊池が担当している授業などに関しても紹介します．">
+	<link rel="stylesheet" href="common/css/normalize.css">
+	<link rel="stylesheet" href="common/css/style.css">
 
-</div>
+	<script src="common/js/jquery-1.11.1.min.js"></script>
+	<script src="common/js/jquery.bxslider/jquery.bxslider.js"></script>
+	<link rel="stylesheet" href="common/js/jquery.bxslider/jquery.bxslider.css">
+	<script>
+		$(document).ready(function(){
+			$('.bxslider').bxSlider({
+				auto: true,
+				speed: 1000,
+				pause: 5000
+			});
+		});
+	</script>
+
+</head>
+
+
+
+<body>
+
+<!-- ID:page範囲指定 -->
+<div id="page">
+
+	<!-- ページヘッダ -->
+	<header id="pageHead">
+
+<!--
+		<h1 id="siteTitle">KIKUCHI Lab., Tokyo University of Technology</h1>
+-->
+
+		<h1 id="siteTitle"><img src="images/kikuchibar2.jpg" width="980" height="69" alt=""></h1>
+		<p id="catchcopy">東京工科大学メディア学部菊池研究室 Web サイト</p>
+
+
+
+
+		<nav class="globalNavi">
+			<ul>
+				<li class="current"><a href="index.html">ホーム</a></li>
+				<li><a href="research/index.html">研究プロジェクト</a></li>
+				<li><a href="scholarly/index.html">業績一覧</a></li>
+				<li><a href="gallery/index.html">ギャラリ</a></li>
+				<li><a href="class/index.html">授業に関して</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- 本体コンテンツ -->
+	<div id="pageBody">
+
+		<section class="mainVisual">
+			<ul class="bxslider">
+
+				<li>
+					<div class="mainVisualText">
+						<h1>Web Site of KIKUCHI Lab.</h1>
+						<p>School of Media Science, Tokyo University of Technology<br>
+				東京工科大学メディア学部菊池研究室のページです．菊池研究室で行っている研究プロジェクトや活動の様子，菊池が担当している授業に関して紹介します．
+						</p>
+					</div>
+					<img src="images/MainVisual_img_01.jpg" width="980" height="500" alt="">
+				</li>
+
+				<!-- ここからがスライドショー
+				-->
+
+				<li>
+					<div class="mainVisualText">
+						<h1>第20回文化庁メディア芸術祭・審査委員会推薦作品（エンターテインメント部門）に選出</h1>
+						<p>菊池研究室2015年度卒業生・宮脇巧真君の卒業研究作品「Crossing Tokyo」が，「第20回文化庁メディア芸術祭」において「審査委員会推薦作品・エンターテインメント部門」に選出されました．
+						</p>
+					</div>
+					<img src="images/MainVisual_img_10.jpg" width="980" height="500" alt="">
+				</li>
+
+
+				<li>
+					<div class="mainVisualText">
+						<h1>平成27年芸術科学会「最優秀論文賞」を受賞</h1>
+						<p>我々の研究グループによる学術論文「雪崩による雪煙のビジュアルシミュレーション」が，平成27年芸術科学会最優秀論文賞を受賞しました．
+						</p>
+					</div>
+					<img src="images/MainVisual_img_09.jpg" width="980" height="500" alt="">
+				</li>
+
+				<li>
+					<div class="mainVisualText">
+						<h1>”セマンティックスコア法による映画予告編映像制作手法”が芸術科学会論文誌に採録</h1>
+						<p>我々の研究グループによる学術論文「セマンティックスコア法による映画予告編映像制作手法」が，芸術科学会論文誌 Vol.15，No.4 に採録されました（pp.125-134）．
+						</p>
+					</div>
+					<img src="images/MainVisual_img_08.jpg" width="980" height="500" alt="">
+				</li>
+
+				<li>
+					<div class="mainVisualText">
+						<h1>”FLIP と 1/f ノイズによる水中砂塵のプロシージャルアニメーション”が芸術科学会論文誌に採録</h1>
+						<p>我々の研究グループによる学術論文「FLIP と 1/f ノイズによる水中砂塵のプロシージャルアニメーション」が，芸術科学会論文誌 Vol.15，No.2 に採録されました（pp.55-65）．
+						</p>
+					</div>
+					<img src="images/MainVisual_img_07.jpg" width="980" height="500" alt="">
+				</li>
+
+
+				<li>
+					<div class="mainVisualText">
+						<h1>”雪崩による雪煙のビジュアルシミュレーション”が芸術科学会論文誌に採録</h1>
+						<p>我々の研究グループによる学術論文「雪崩による雪煙のビジュアルシミュレーション」が，芸術科学会論文誌 Vol.14，No.3 に採録されました（pp.83-90）．
+						</p>
+					</div>
+					<img src="images/MainVisual_img_04.jpg" width="980" height="500" alt="">
+				</li>
+
+
+
+			</ul>
+		</section>
+
+		<section class="researchIndex">
+			<article>
+				<a href="research/index.html"><img src="images/index_01.jpg" width="300" height="163" alt=""></a>
+				<h2><a href="research/index.html">研究プロジェクト</a></h2>
+				<p>菊池研究室の研究プロジェクト「Procedural Animation」，「Contents Design Science」を紹介します．</p>
+			</article>
+			<article>
+				<a href="class/index.html"><img src="images/index_02.jpg" width="300" height="163" alt=""></a>
+				<h2><a href="class/index.html">授業に関して</a></h2>
+				<p>菊池が東京工科大学メディア学部で担当する授業に関して紹介します．</p>
+			</article>
+			<article>
+				<a href="gallery/index.html"><img src="images/index_03.jpg" width="300" height="163" alt=""></a>
+				<h2><a href="gallery/index.html">ギャラリ</a></h2>
+				<p>菊池研究室による研究成果映像・画像や，活動の模様（写真）などを公開します．</p>
+			</article>
+		</section>
+
+
+		<section class="news">
+			<h1>おしらせ</h1>
+			<table>
+
+				<tr>
+					<th><time datetime="2018-05-018">2018.05.18</time></th>
+					<td>
+						<b>【学内・メディア学部3年生向け】</b>研究室配属のための「研究室公開日程」を決定しました．詳細は「研究プロジェクト」ページから，各テーマページの下部をご覧ください．
+					</td>
+				</tr>
+
+<!--
+
+
+				<tr>
+					<th><time datetime="2018-03-015">2018.03.15</time></th>
+					<td>
+						<b>【学内・メディア学部2年生・3年生向け】</b>2018年度前期「先端メディア学・ゼミナール：先端 Procedural Animation」の説明会情報を公開しました．詳細は「授業に関して」ページから，先端メディア学・ゼミナールのページをご覧ください．
+					</td>
+				</tr>
+
+-->
+
+
+				<tr>
+					<th><time datetime="2017-03-018">2017.03.18</time></th>
+					<td>
+						菊池研究室2015年度卒業生・宮脇巧真君の卒業研究作品「Crossing Tokyo」が，「第20回文化庁メディア芸術祭」において「審査委員会推薦作品・エンターテインメント部門」に選出されました．詳細は<a href="http://blog.media.teu.ac.jp/2017/03/20-cde6.html" target="_blank">こちら</a>をご覧ください．
+					</td>
+				</tr>
+
+
+				<tr>
+					<th><time datetime="2017-01-011">2017.01.11</time></th>
+					<td>
+						論文「セマンティックスコア法による映画予告編映像制作手法」が，芸術科学会論文誌 Vol.15，No.4 に採録されました．詳細は<a href="http://blog.media.teu.ac.jp/2017/01/post-1a89.html" target="_blank">こちら</a>をご覧ください．
+					</td>
+				</tr>
+
+
+				<tr>
+					<th><time datetime="2016-11-014">2016.11.14</time></th>
+					<td>
+						菊池研究室からの研究論文が平成27年芸術科学会最優秀論文賞を受賞しました．詳細は<a href="http://blog.media.teu.ac.jp/2016/11/post-3c88.html" target="_blank">こちら</a>をご覧ください．
+					</td>
+				</tr>
+
+
+				<tr>
+					<th><time datetime="2016-06-015">2016.06.15</time></th>
+					<td>
+						論文「水中砂塵のプロシージャルアニメーション」が，芸術科学会論文誌 Vol.15，No.2 に採録されました．論文は<a href="http://www.art-science.org/journal/v15n2/index.html" target="_blank">こちら</a>からご覧いただけます．
+					</td>
+				</tr>
+
+
+
+				<tr>
+					<th><time datetime="2016-03-015">2016.03.15</time></th>
+					<td>
+						論文「ミニチュア映像におけるミニチュア感要素の抽出と観察者の感性との相関に関する研究」が，芸術科学会論文誌 Vol.15，No.1 に採録されました．論文は<a href="http://www.art-science.org/journal/v15n1/index.html" target="_blank">こちら</a>からご覧いただけます．
+					</td>
+				</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+				<tr>
+					<th><time datetime="2016-03-009">2016.03.09</time></th>
+					<td>
+						「映像表現・芸術科学フォーラム 2016」にて菊池研グループによる研究成果発表を行った結果，5 つの賞を頂きました！詳しくは<a href="http://www.teu.ac.jp/information/2016.html?id=88" target="_blank">こちら</a>からご覧ください．
+					</td>
+				</tr>
+
+				<tr>
+					<th><time datetime="2016-01-020">2016.01.20</time></th>
+					<td>
+						2016年1月23日（土）：岩手県盛岡市・いわて県民情報交流センター（アイーナ）にて開催される「平成27年度芸術科学会東北支部大会」にて，菊池研から研究発表を行います．詳しいプログラムなどは<a href="http://www-cg.cis.iwate-u.ac.jp/as-tohoku/" target="_blank">こちら</a>からご覧ください．
+					</td>
+				</tr>
+
+				<tr>
+					<th><time datetime="2015-06-015">2015.06.15</time></th>
+					<td>
+						論文「雪崩による雪煙のビジュアルシミュレーション」が，芸術科学会論文誌 Vol.14，No.3 に採録されました．論文は<a href="http://www.art-science.org/journal/v14n3/index.html" target="_blank">こちら</a>からご覧いただけます．
+					</td>
+				</tr>
+
+				<tr>
+					<th><time datetime="2015-03-014">2015.03.14</time></th>
+					<td>
+						「映像表現・芸術科学フォーラム 2015」にて，菊池研グループによる研究発表「ミニチュア映像におけるミニチュア感要素の抽出と観察者の感性との相関に関する研究」が，「ポスター発表優秀賞」を受賞しました．
+					</td>
+				</tr>
+-->
+
+
+
+
+
+
+
+
+
+			</table>
+		</section>
+
+
+
+		<article class="articleDetail">
+			<section class="contact">
+				<h1>おといあわせ</h1>
+				<p>菊池研究室に関するおといあわせは，おといあわせフォームより受け付けています．</p>
+				<p class="btn"><a href="http://goo.gl/forms/98oVcxYmrE" target="_blank">おといあわせフォーム</a><p>
+			</section>
+		</article>
+
+
+
+
+	</div><!-- ID:pageBody範囲指定終わり -->
+
+
+	<p class="pagetop"><a href="#page">ページの先頭へ戻る</a></p>
+
+
+	<footer id="pageFoot">
+		<p id="copyright"><small>Copyright&copy; 2014 @TsukasaKikuchi All Rights Reserved.</small>
+		</p>
+	</footer>
+
+</div><!-- ID:page範囲指定終わり -->
+
+
 </body>
-</html>
