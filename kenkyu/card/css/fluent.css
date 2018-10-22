@@ -1,0 +1,229 @@
+/* 文字：#333333
+メインカラー：#F44336
+サブカラー1(濃い)：#E53935
+サブカラー2(薄い)：#EF9A9A
+アクセント：#FDD835
+白：#F1F1F1
+シャドウ：#DDDDDD
+ */
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+/* 全体的なやつ */
+html{
+  height: 100%;
+}
+
+body{
+  font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  height: 100%;
+  margin: 0;
+  color: #333333;
+  background: #F1F1F1;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.page_size{
+  width: 1080px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.border{
+  border-bottom: solid 1px #333333;
+}
+
+.img{
+  width: 70%;
+  height: auto;
+}
+
+/* シャドウ */
+.z-depth-0 {
+  box-shadow: none !important;
+}
+.z-depth-1{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.z-depth-1-half{
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* 上に戻るボタン */
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#page-top a {
+  display: block;
+  z-index: 999;
+  padding: 20px 20px 20px 20px;
+  border-radius: 30px;
+  background: -moz-linear-gradient(top left, #999999, transparent);
+  background: -webkit-linear-gradient(top left, #999999, transparent);
+  background: linear-gradient(to bottom right, #999999, transparent);
+  color: #333333;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 2px 5px 10px #DDDDDD;
+  transition: .3s;
+}
+#page-top a:hover {
+  text-decoration: none;
+  box-shadow: 1px 1px 10px #999999;
+  opacity: 0.7;
+}
+
+/* ナビゲーションバー */
+#navigation_bar{
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background: -moz-linear-gradient(top left, #999999 20%, transparent);
+  background: -webkit-linear-gradient(top left, #999999 20%, transparent);
+  background: linear-gradient(to bottom right, #999999 20%, transparent);
+  z-index: 1;
+}
+
+#nav_mask{
+
+}
+
+#page_logo{
+  float: left;
+  margin-left: 10px;
+  color: #F1F1F1;
+}
+
+#menu{
+  float: right;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+#menu ul{
+  display: flex;
+}
+
+#menu li{
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 20px;
+  color: #F1F1F1;
+}
+#menu li:hover{
+}
+
+#menu a{
+  text-decoration: none;
+}
+
+
+/* ヘッダー画像 */
+#top_kari{
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+/* コンテンツ */
+#contents{
+  margin-bottom: 60px;
+  margin-top: 70px;
+}
+
+
+/* トップ記事部分 */
+
+#article{
+  margin-top: 30px;
+  display: flex;
+}
+
+#article a{
+  text-decoration: none;
+  color: #333333;
+}
+
+.article_card{
+ width: 330px;
+ height: 370px;
+ margin-right: 42px;
+ flex-direction: row;
+ justify-content: space-between;
+ background: #FFFFFF;
+ transition-duration: 0.3s;
+}
+.article_card:hover{
+  transform: translateY(4px);
+}
+
+.article_card img{
+  width: 330px;
+}
+
+.article_sent{
+   padding: 0px 20px 30px 20px;
+}
+
+
+/* おしらせ */
+#news{
+  margin-top: 30px;
+}
+
+
+/* お問い合わせ */
+#contact{
+  margin-bottom: 30px;
+}
+
+#button{
+  width: 160px;
+  padding: 5px;
+  background: #E53935;
+  color: #FFFFFF;
+}
+
+/* フッター */
+#footer{
+  text-align: center;
+}
+
+/* 固定ページ */
+#header{
+  position: relative;
+}
+
+#header_img{
+  width:100%;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 0px 2px 3px #888888;
+}
+
+#page_title{
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  padding-bottom:20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+}
+
+/* フラット系 */
+
+/* マテリアル系 */

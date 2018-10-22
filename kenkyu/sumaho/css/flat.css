@@ -1,0 +1,227 @@
+/* 文字：#333333
+メインカラー：#F44336
+サブカラー1(濃い)：#E53935
+サブカラー2(薄い)：#EF9A9A
+アクセント：#FDD835
+白：#F1F1F1
+シャドウ：#DDDDDD
+ */
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+/* 全体的なやつ */
+html{
+  height: 100%;
+}
+
+body{
+  font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  height: 100%;
+  margin: 0;
+  color: #333333;
+  background: #F1F1F1;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.page_size{
+  width: 1080px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.border{
+  border-bottom: solid 1px #333333;
+}
+
+.img{
+  width: 70%;
+  height: auto;
+}
+
+
+/* 上に戻るボタン */
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#page-top a {
+  display: block;
+  z-index: 999;
+  padding: 20px 20px 20px 20px;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  color: #333333;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 2px 5px #DDDDDD;
+  transition: .3s;
+}
+#page-top a:hover {
+  text-decoration: none;
+  box-shadow: 1px 1px #DDDDDD;
+  opacity: 0.7;
+}
+
+/* ナビゲーションメニュー */
+#navigation_bar{
+  background: #FFFFFF;
+}
+
+#navigation_bar h1{
+  float: left;
+}
+
+#navigation_bar p{
+  float: right;
+}
+
+#top_img{
+  width: 100%;
+}
+
+/* メニュー */
+/* :::::: toggle button :::::: */
+#navTgl {
+	display: none;
+}
+label {
+	cursor: pointer;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+.open {
+	z-index: 2;
+	width: 48px;
+	height: 48px;
+	background: #FFFFFF;
+  border: solid 1px #888888;
+  margin-top: 10px;
+  margin-right: 10px;
+	transition: background .6s, transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.open::before,
+.open::after {
+	content: "";
+}
+.open span,
+.open::before,
+.open::after {
+	content: "";
+	position: absolute;
+	top: calc(50% - 1px);
+	right: 30%;
+	width: 40%;
+	border-bottom: 2px solid #888888;
+	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.open::before {
+	transform: translateY(-8px);
+}
+.open::after {
+	transform: translateY(8px);
+}
+.close {
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	transition: background .6s;
+}
+#navTgl:checked + .open {
+	background: indianRed;
+	transform: translateX(250px);
+}
+#navTgl:checked + .open span {
+	transform: scaleX(0);
+}
+#navTgl:checked + .open::before {
+	transform: rotate(45deg);
+}
+#navTgl:checked + .open::after {
+	transform: rotate(-45deg);
+}
+#navTgl:checked ~ .close {
+	pointer-events: auto;
+	background: rgba(0,0,0,.3);
+}
+
+/* :::::: drawer menu :::::: */
+.menu {
+	z-index: 1;
+	position: fixed;
+	overflow: auto;
+	top: 0;
+	right: 0;
+	width: 250px;
+	height: 100%;
+	margin: 0;
+	padding: 10px;
+	box-sizing: border-box;
+	background: #FFFFFF;
+	transform: translateX(100%);
+	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.menu h2,
+.menu a {
+	color: #888888;
+}
+.menu h2 {
+	text-align: center;
+}
+.menu ul {
+	margin: 0;
+	padding: 0;
+  text-decoration: none;
+}
+.menu li {
+	line-height: 1.4;
+  list-style: none;
+}
+.menu li:not(:first-child) {
+	border-top: 1px solid rgba(255,255,255,.6);
+}
+.menu a {
+	display: block;
+	padding: 1em 2em;
+	text-decoration: inherit;
+	transition: background .6s;
+}
+.menu a:hover {
+	background: black;
+}
+#navTgl:checked ~ .menu {
+	transform: none;
+}
+
+/* 記事部分 */
+#contents h2{
+  text-align: center;
+}
+
+.article_card{
+  height: 350px;
+  float: left;
+  background: #FFFFFF;
+  margin:0px 30px 20px 30px;
+}
+
+.article_card img{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article_sent{
+  padding: 5px 10px 5px 10px;
+}
