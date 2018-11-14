@@ -3,66 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <title>カード -SOTSUKEN-</title>
-  <link rel="stylesheet" href="../css/flat.css">
+  <link rel="stylesheet" href="../css/material.css">
   <script src="../js/jquery-3.2.1.min.js"></script>
   <script src="../js/masonry.pkgd.min.js"></script>
   <script src="../js/script.js"></script>
 </head>
 <body>
- <div id="navigation_bar" class="clearfix">
-    <h1 id="page_logo">CARD</h1>
-    <div id="menu">
-      <ul>
-        <a href="index_flat.html"><li>ホーム</li></a>
-        <a href="project_flat.html"><li>ブログ</li></a>
-        <a href="scholarly_flat.html"><li>サイトについて</li></a>
-        <a href="class_flat.html"><li>ギャラリー</li></a>
-      </ul>
-    </div>
-  </div>
-  <div id="contents" class="clearfix">
-    <div id="masonry" class="page_size clearfix">
-    	<div class="grid grid_tate2">
-        <img src="../img/articlePhoto_1.JPG" alt="">
-        <p class="article_sent">あああああああ</p>
-      </div>
-    	<div class="grid">
-        <img src="../img/articlePhoto_1.JPG" alt="">
-        <p class="article_sent">あああああああ</p>
-      </div>
-      <div class="grid">
-        <img src="../img/articlePhoto_2.JPG" alt="">
-        <p class="article_sent">あああああああ</p>
-      </div>
-      <div class="grid">
-        <img src="../img/articlePhoto_3.JPG" alt="">
-        <p class="article_sent">あああああああ</p>
-      </div>
-      <div class="grid">
-        <img src="../img/articlePhoto_4.JPG" alt="">
-        <p class="article_sent">あああああああ</p>
-      </div>
-      <div class="grid">
-        <img src="../img/articlePhoto_5.JPG" alt="">
-        <p class="article_sent">あああああああ</p>
-      </div>
-      <div class="grid grid_yoko2">
-        <img src="../img/DSCF9806.JPG" alt="">
-        <p class="article_sent">あああああああ</p>
-      </div>
-      <div class="grid">く</div>
-      <div class="grid">
-        <img src="../img/index_01.jpg" alt="">
-        <p class="article_sent">あああああああ</p>
-      </div>
-      <div class="grid">
-        <img src="../img/articlePhoto_1.JPG" alt="">
-        <p class="article_sent">あああああああ</p>
-      </div>
-    </div>
-  </div>
-  <!-- <div id="footer">
-    <p>©makishinji no sotuken</p>
-  </div> -->
+  <div id="navigation_bar" class="clearfix z-depth-1-half">
+     <h1 id="page_logo">CARD</h1>
+     <div id="menu">
+       <ul>
+         <a href="index_flat.html"><li>ホーム</li></a>
+         <a href="scholarly_flat.html"><li>サイトについて</li></a>
+       </ul>
+     </div>
+   </div>
+   <div id="contents" class="clearfix">
+     <div id="masonry" class="page_size clearfix">
+       <div class="grid z-depth-1 grid_tate2">
+         <img src="../img/articlePhoto_1.JPG" alt="">
+         <h2>切り取られた造園</h2>
+         <p>昭和記念公園にて展示されていた盆栽です。</p>
+         <a class="card_link ripple" href="article_01.html">写真を見る</a>
+       </div>
+       <div class="grid z-depth-1 grid_yoko2">
+         <img src="../img/articlePhoto_2.JPG" alt="">
+         <h2>ゆめにうつつ・・・</h2>
+         <p class="article_sent">お台場にていた野良猫を撮った写真です。</p>
+         <a class="card_link ripple" href="article_01.html">写真を見る</a>
+       </div>
+       <div class="grid z-depth-1 grid_yoko2">
+         <img src="../img/articlePhoto_3.JPG" alt="">
+         <h2>見据えた先に</h2>
+         <p class="article_sent">鶴岡八幡宮のリスです。</p>
+         <a class="card_link ripple" href="article_01.html">写真を見る</a>
+       </div>
+       <div class="grid z-depth-1">
+         <img src="../img/articlePhoto_4.JPG" alt="">
+         <h2>黒部の壁</h2>
+         <a class="card_link_sma ripple" href="article_01.html">写真を見る</a>
+       </div>
+       <div class="grid z-depth-1">
+         <img src="../img/articlePhoto_4.JPG" alt="">
+         <h2>黒部の壁</h2>
+         <a class="card_link_sma ripple" href="article_01.html">写真を見る</a>
+       </div>
+       <div class="grid z-depth-1 z-depth-1">
+         <img src="../img/articlePhoto_4.JPG" alt="">
+         <h2>黒部の壁</h2>
+         <a class="card_link_sma ripple" href="article_01.html">写真を見る</a>
+       </div>
+       <div class="grid z-depth-1">
+         <img src="../img/articlePhoto_4.JPG" alt="">
+         <h2>黒部の壁</h2>
+         <a class="card_link_sma ripple" href="article_01.html">写真を見る</a>
+       </div>
+     </div>
+   </div>
+   <div id="footer">
+     <p>©makishinji no sotuken</p>
+   </div>
+  <script>
+  (function() {
+    var ripple, ripples, RippleEffect,loc, cover, coversize, style, x, y, i, num;
+
+    //クラス名rippleの要素を取得
+    ripples = document.querySelectorAll('.ripple');
+
+    //位置を取得
+    RippleEffect = function(e) {
+    ripple = this;//クリックされたボタンを取得
+    cover = document.createElement('span');//span作る
+    coversize = ripple.offsetWidth;//要素の幅を取得
+    loc = ripple.getBoundingClientRect();//絶対座標の取得
+    x = e.pageX - loc.left - window.pageXOffset - (coversize / 2);
+    y = e.pageY - loc.top - window.pageYOffset - (coversize / 2);
+    pos = 'top:' + y + 'px; left:' + x + 'px; height:' + coversize + 'px; width:' + coversize + 'px;';
+
+    //spanを追加
+    ripple.appendChild(cover);
+    cover.setAttribute('style', pos);
+    cover.setAttribute('class', 'rp-effect');//クラス名追加
+
+    //しばらくしたらspanを削除
+    setTimeout(function() {
+      var list = document.getElementsByClassName( "rp-effect" ) ;
+      for(var i =list.length-1;i>=0; i--){//末尾から順にすべて削除
+        list[i].parentNode.removeChild(list[i]);
+    }}, 2000)};
+    for (i = 0, num = ripples.length; i < num; i++) {
+      ripple = ripples[i];
+      ripple.addEventListener('mousedown', RippleEffect);
+    }
+  }());
+  </script>
 </body>
 </html>

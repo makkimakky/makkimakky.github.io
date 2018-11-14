@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ゆめにうつつ・・・ -SOTSUKEN-</title>
+  <link rel="stylesheet" href="../css/material.css">
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <script src="../js/masonry.pkgd.min.js"></script>
+  <script src="../js/script.js"></script>
+</head>
+<body>
+ <div id="navigation_bar" class="clearfix z-depth-1-half">
+    <h1 id="page_logo">CARD</h1>
+    <div id="menu">
+      <ul>
+        <a href="index_flat.html"><li>ホーム</li></a>
+        <a href="scholarly_flat.html"><li>サイトについて</li></a>
+      </ul>
+    </div>
+  </div>
+  <div id="contents" class="clearfix">
+    <div id="article">
+      <h1>ゆめにうつつ・・・</h1>
+      <img src="../img/articlePhoto_2.JPG" alt="">
+      <p>お台場にていた野良猫を撮った写真です。</p>
+      <p><a class="modal button clearfix ripple" href="#comment_modal">コメントをする</a></p>
+      <!-- CSSで非表示に設定 -->
+      <div id="comment_modal" class="clearfix">
+        <h2>コメントフォーム</h2>
+        <div class="cp_iptxt">
+          <input class="ef" type="text" placeholder="">
+          <label>お名前</label>
+          <span class="focus_line"></span>
+        </div>
+        <div class="cp_iptxt">
+          <input class="ef" type="text" placeholder="">
+          <label>メールアドレス</label>
+          <span class="focus_line"></span>
+        </div>
+        <div class="cp_iptxt">
+          <input class="ef" type="text" placeholder="">
+          <label>一言コメント</label>
+          <span class="focus_line"></span>
+        </div>
+        <div id="sousin_close">
+          <p><a class="modal-move button_form ripple" href="#sousin">送信する</a></p>
+        </div>
+        <div id="sousin_close">
+          <p><a class="modal-move button_form ripple" href="#sousin">送信する</a></p>
+        </div>
+      </div>
+      <div id="sousin">
+        <p>お疲れ様でした。これにて実験は終わりです。</p>
+        <a href="https://goo.gl/forms/YKD7CmpEYA67x67G3">アンケートを記入する</a>
+      </div>
+      <!-- //CSSで非表示に設定 -->
+    </div>
+    <a id="back_top" href="index_material.html">TOPに戻る</a>
+  </div>
+  <div id="footer">
+    <p>©makishinji no sotuken</p>
+  </div>
+  <script>
+  (function() {
+    var ripple, ripples, RippleEffect,loc, cover, coversize, style, x, y, i, num;
+
+    //クラス名rippleの要素を取得
+    ripples = document.querySelectorAll('.ripple');
+
+    //位置を取得
+    RippleEffect = function(e) {
+    ripple = this;//クリックされたボタンを取得
+    cover = document.createElement('span');//span作る
+    coversize = ripple.offsetWidth;//要素の幅を取得
+    loc = ripple.getBoundingClientRect();//絶対座標の取得
+    x = e.pageX - loc.left - window.pageXOffset - (coversize / 2);
+    y = e.pageY - loc.top - window.pageYOffset - (coversize / 2);
+    pos = 'top:' + y + 'px; left:' + x + 'px; height:' + coversize + 'px; width:' + coversize + 'px;';
+
+    //spanを追加
+    ripple.appendChild(cover);
+    cover.setAttribute('style', pos);
+    cover.setAttribute('class', 'rp-effect');//クラス名追加
+
+    //しばらくしたらspanを削除
+    setTimeout(function() {
+      var list = document.getElementsByClassName( "rp-effect" ) ;
+      for(var i =list.length-1;i>=0; i--){//末尾から順にすべて削除
+        list[i].parentNode.removeChild(list[i]);
+    }}, 2000)};
+    for (i = 0, num = ripples.length; i < num; i++) {
+      ripple = ripples[i];
+      ripple.addEventListener('mousedown', RippleEffect);
+    }
+  }());
+  </script>
+</body>
+</html>

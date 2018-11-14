@@ -207,6 +207,16 @@ body{
   color: #FFFFFF;
 }
 
+/* 記事装飾 */
+#contents h1{
+  text-align: center;
+}
+
+#contents h2{
+  border-bottom: solid 1px #000000;
+}
+
+
 /* フラット系 */
 
 /* マテリアル系 */
