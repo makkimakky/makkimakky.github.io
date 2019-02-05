@@ -1,108 +1,84 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>マルチカラム - SOTSUKEN</title>
   <link rel="stylesheet" href="../css/material.css">
-  <script src="../js/jquery-3.2.1.min.js"></script>
-  <script src="../js/script.js"></script>
 </head>
 <body>
- <div id="navigation_bar" class="clearfix z-depth-1-half ripple">
-    <h1 id="page_logo">BLOG TITLE</h1>
+ <div id="navigation_bar" class="clearfix z-depth-1-half">
+    <h1 id="page_logo">MULTI COLUM</h1>
     <div id="menu">
       <ul>
-        <a href="index_flat.html"><li>ホーム</li></a>
-        <a href="project_flat.html"><li>ブログ</li></a>
-        <a href="scholarly_flat.html"><li>サイトについて</li></a>
-        <a href="class_flat.html"><li>ギャラリー</li></a>
+        <a href="index_material.html"><li>ホーム</li></a>
+        <a href="scholarly_material.html"><li>サイトについて</li></a>
       </ul>
     </div>
   </div>
   <div id="contents" class="clearfix">
-    <div id="sideber_left">
-      <div id="sideber_widget" class="z-depth-1">
-        <h2>menu</h2>
-        <p>トップ</p>
-        <p>最新の記事</p>
-        <p>人気の記事</p>
-        <p>カテゴリ</p>
-      </div>
-      <div id="sideber_widget" class="z-depth-1">
+    <div id="sideber_left" class="z-depth-1">
+      <div id="sideber_widget">
         <h2>最新記事</h2>
+        <a href="article_01.html">
+        <img src="../img/articlePhoto_1.JPG" alt="">
+        <p class="sideber_link">切り取られた造園</p>
+        </a>
+        <a href="article_02.html">
         <img src="../img/articlePhoto_2.JPG" alt="">
-        <a href="">猫を触ると気持ちいい10の理由</a>
-        <img src="../img/articlePhoto_2.JPG" alt="">
-        <a href="">猫が癒される5の理由！？</a>
+        <p class="sideber_link">ゆめにうつつ</p>
+        </a>
+        <a href="article_03.html">
+        <img src="../img/articlePhoto_3.JPG" alt="">
+        <p class="sideber_link">見据える先は？</p>
+        </a>
       </div>
     </div>
-    <div id="article" class="z-depth-1">
-      <img src="../img/articlePhoto_1.JPG" alt="">
-      <div id="article_main">
-        <h1>卒業研究について</h1>
-        <h2>WEBデザインに関する研究</h2>
-        <p>WEBデザイン、と言ってもコーディングだけをするわけではなく、</p>
-        <p>やることに関しては多岐に渡る。</p>
-        <p>企業に属して働くWEBデザイナーの多くは、コーディングが得意な人、コンテンツのデザインが得意な人、</p>
-        <p>運営が得意な人のように、それぞれの適材適所で業務を行っている。</p>
-        <p>対してフリーランスはコンテンツ制作だけではなく、</p>
-        <p>クライアントとの会議や交渉、果てには税金等の管理なども一人でやらなければいけない。</p>
-        <p>これに関しては、WEBデザイナーに限らずフリーランスではそうである。</p>
-        <p>ちなみに、この記事の中身に関して、特に意味はない。</p>
-      <div id="form">
-        <h3>コメント欄</h3><small>実際には送れません</small>
-        <form method="post" action="example.cgi">
-          <p>お名前：<input type="text" name="name"></p>
-          <p>メールアドレス：<input type="text" name="email"></p>
-          <p>コメント：<input type="text" row="5" name="email"></p>
-          <a class="raised ripple">BUTTON</a>
-        </form>
+    <div id="article">
+     <div id="article_01" class="article_card z-depth-1">
+        <img class="article_img" src="../img/articlePhoto_1.JPG" alt="">
+        <div class="article_sent">
+          <h1>切り取られた造園</h1>
+          <p>昭和記念公園にて撮影した盆栽です。</p>
+          <a class="article_link" href="article_01.html">つづきを読む</a>
+       </div>
+     </div>
+      <div id="article_02" class="article_card z-depth-1">
+         <img class="article_img" src="../img/articlePhoto_2.JPG" alt="">
+         <div class="article_sent">
+           <h1>ゆめにうつつ・・・</h1>
+           <p>お台場海浜公園にいた野良猫を撮りました。</p>
+           <a class="article_link" href="article_02.html">つづきを読む</a>
+         </div>
+      </div>
+      <div id="article_03" class="article_card z-depth-1">
+         <img class="article_img" src="../img/articlePhoto_3.JPG" alt="">
+         <div class="article_sent">
+           <h1>見据える先は？</h1>
+           <p>鶴岡八幡宮にいたリスを撮影したものです。</p>
+           <a class="article_link" href="article_03.html">つづきを読む</a>
+         </div>
+      </div>
+      <div id="article_04" class="article_card z-depth-1">
+         <img class="article_img" src="../img/articlePhoto_4.JPG" alt="">
+         <div class="article_sent">
+           <h1>黒部の壁</h1>
+           <p>８月に訪れた黒部ダムです。すごく大きい。</p>
+           <a class="article_link" href="article_04.html">つづきを読む</a>
+         </div>
       </div>
       </div>
-      </div>
-    <div id="sideber_right">
-      <div id="sideber_widget" class="z-depth-1">
-        <h2>もくじ</h2>
-        <p>WEBデザインに関する研究</p>
+    <div id="sideber_right" class=" z-depth-1">
+      <div id="sideber_widget">
+        <h2>記事一覧</h2>
+        <a href="#article_01">切り取られた造園</a><br>
+        <a href="#article_02">ゆめにうつつ・・・</a><br>
+        <a href="#article_03">見据える先は？</a><br>
+        <a href="#article_04">黒部の壁</a><br>
       </div>
     </div>
   </div>
   <div id="footer">
     <p>©makishinji no sotuken<p>
   </div>
-  <script>
-        (function() {
-      var ripple, ripples, RippleEffect,loc, cover, coversize, style, x, y, i, num;
-
-      //クラス名rippleの要素を取得
-      ripples = document.querySelectorAll('.ripple');
-
-      //位置を取得
-      RippleEffect = function(e) {
-      ripple = this;//クリックされたボタンを取得
-      cover = document.createElement('span');//span作る
-      coversize = ripple.offsetWidth;//要素の幅を取得
-      loc = ripple.getBoundingClientRect();//絶対座標の取得
-      x = e.pageX - loc.left - window.pageXOffset - (coversize / 2);
-      y = e.pageY - loc.top - window.pageYOffset - (coversize / 2);
-      pos = 'top:' + y + 'px; left:' + x + 'px; height:' + coversize + 'px; width:' + coversize + 'px;';
-
-      //spanを追加
-      ripple.appendChild(cover);
-      cover.setAttribute('style', pos);
-      cover.setAttribute('class', 'rp-effect');//クラス名追加
-
-      //しばらくしたらspanを削除
-      setTimeout(function() {
-        var list = document.getElementsByClassName( "rp-effect" ) ;
-        for(var i =list.length-1;i>=0; i--){//末尾から順にすべて削除
-          list[i].parentNode.removeChild(list[i]);
-      }}, 2000)};
-      for (i = 0, num = ripples.length; i < num; i++) {
-        ripple = ripples[i];
-        ripple.addEventListener('mousedown', RippleEffect);
-      }
-      }());
-  </script>
 </body>
 </html>

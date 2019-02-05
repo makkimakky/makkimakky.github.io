@@ -4,7 +4,7 @@
 サブカラー1(濃い)：#E53935
 サブカラー2(薄い)：#EF9A9A
 アクセント：#FDD835
-白：#F1F1F1
+白：#FAFAFA
 シャドウ：#DDDDDD
  */
 
@@ -22,7 +22,7 @@ body{
   height: 100%;
   margin: 0;
   color: rgba(0, 0, 0, 0.87);
-  background: #F1F1F1;
+  background: #FAFAFA;
 }
 
 .clearfix:after {
@@ -75,13 +75,12 @@ body{
   color: #333333;
   text-decoration: none;
   text-align: center;
-  box-shadow: 2px 5px 5px #DDDDDD;
-  transition: .3s;
+  border-radius: 50%;/*角丸く*/
+  transition: .3s;/*滑らかな動きに*/
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);/*影*/
 }
 #page-top a:hover {
-  text-decoration: none;
-  box-shadow: 1px 1px 1px #DDDDDD;
-  opacity: 0.7;
+   box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
 }
 
 /* リップルエフェクト */
@@ -191,11 +190,11 @@ body{
   flex-direction: row;
   justify-content: space-between;
   background: #FFFFFF;
-  transition-duration: 0.3s;
+  transition: .3s;
   border-radius: 2px;
 }
 .article_card:hover{
-  transform: translateY(4px);
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);/*浮き上がるように*/
 }
 
 .article_card img{
@@ -205,6 +204,16 @@ body{
 .article_sent{
    padding: 0px 20px 30px 20px;
 }
+
+.article_kobetu{
+  background: #FFFFFF;
+  padding: 10px 10px 30px 10px;
+  border-radius: 2px;
+  transition: .3s
+}
+.article_kobetu:hover{
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);/*浮き上がるように*/
+  }
 
 /* おしらせ */
 #news{

@@ -3,7 +3,7 @@
 サブカラー1(濃い)：#E53935
 サブカラー2(薄い)：#EF9A9A
 アクセント：#FDD835
-白：#F1F1F1
+白：#FAFAFA
 シャドウ：#DDDDDD
  */
 
@@ -21,7 +21,7 @@ body{
   height: 100%;
   margin: 0;
   color: #333333;
-  background: #F1F1F1;
+  background: #FAFAFA;
 }
 
 .clearfix:after {

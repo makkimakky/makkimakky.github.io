@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>マルチカラム - SOTSUKEN</title>
+  <link rel="stylesheet" href="../css/material.css">
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <script src="../js/script.js"></script>
+</head>
+<body>
+  <div id="navigation_bar" class="clearfix z-depth-1-half">
+     <h1 id="page_logo">MULTI COLUM</h1>
+     <div id="menu">
+       <ul>
+         <a href="index_material.html"><li>ホーム</li></a>
+         <a href="scholarly_material.html"><li>サイトについて</li></a>
+       </ul>
+     </div>
+   </div>
+  <div id="contents" class="clearfix">
+    <div id="sideber_left" class="z-depth-1">
+      <div id="sideber_widget">
+        <h2>最新記事</h2>
+        <a href="article_01.html">
+        <img src="../img/articlePhoto_1.JPG" alt="">
+        <p class="sideber_link">切り取られた造園</p>
+        </a>
+        <a href="article_02.html">
+        <img src="../img/articlePhoto_2.JPG" alt="">
+        <p class="sideber_link">ゆめにうつつ</p>
+        </a>
+        <a href="article_03.html">
+        <img src="../img/articlePhoto_3.JPG" alt="">
+        <p class="sideber_link">見据える先は？</p>
+        </a>
+      </div>
+    </div>
+    <div id="article_kobetu" class="clearfix z-depth-1">
+      <img class="article_img" src="../img/articlePhoto_1.JPG" alt="">
+      <div id="article_main">
+        <h1>切り取られた造園</h1>
+        <p>昭和記念公園にて撮影した盆栽です。</p>
+        <p>盆栽の撮り方、というと説明が難しいのですが、</p>
+        <p>「どういう写真を撮るか？」で様々な撮り方をすることができます。</p>
+        <p>この写真の場合、盆栽の中で表現された世界を写真にしたく、</p>
+        <p>ぐっと近づいて撮ってみたものです。</p>
+        <br>
+        <p><a class="modal button_form clearfix" href="#comment_modal">コメントをする</a></p>
+        <!-- CSSで非表示に設定 -->
+        <div id="comment_modal" class="clearfix z-depth-1-half">
+          <h2>コメントフォーム</h2>
+          <div class="cp_iptxt">
+            <input class="ef" type="text" placeholder="">
+            <label>お名前</label>
+            <span class="focus_line"></span>
+          </div>
+          <div class="cp_iptxt">
+            <input class="ef" type="text" placeholder="">
+            <label>メールアドレス</label>
+            <span class="focus_line"></span>
+          </div>
+          <div class="cp_iptxt">
+            <input class="ef" type="text" placeholder="">
+            <label>一言コメント</label>
+            <span class="focus_line"></span>
+          </div>
+          <div id="sousin_close">
+            <p><a class="modal-move button_form ripple" href="#sousin">送信する</a></p>
+          </div>
+        </div>
+        <div id="sousin">
+          <p>お疲れ様でした。これにて実験は終わりです。</p>
+          <a href="https://goo.gl/forms/YKD7CmpEYA67x67G3">アンケートを記入する</a>
+        </div>
+        <!-- //CSSで非表示に設定 -->
+        </div>
+      </div>
+      <div id="sideber_right" class="z-depth-1">
+      <div id="sideber_widget">
+          <h2>もくじ</h2>
+          <p>WEBデザインに関する研究</p>
+        </div>
+      </div>
+      </div>
+      </div>
+  <div id="footer">
+    <p>©makishinji no sotuken<p>
+  </div>
+</body>
+</html>

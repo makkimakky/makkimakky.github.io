@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>MINIMUM USABILITY DESIGN</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="js/script.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+<body>
+<div class="my-grid">
+  <div id="header" class="z-depth-1-half">
+    <h1>MINIMUM USABILITY DESIGN</h1>
+  </div>
+  <div id="sideber" class="z-depth-1">
+    <h3>MENU</h3>
+    <ul>
+      <a href="about.html"><li>ガイドラインについて</li></a>
+      <a href="single_column.html"><li>シングルカラム</li></a>
+      <a href="multi_column.html"><li class="choice_page">マルチカラム</li></a>
+      <a href="card_layout.html"><li>カード型レイアウト</li></a>
+    </ul>
+  </div>
+  <div id="contents">
+    <h1 class="animated fadeInUp title-animation">マルチカラム</h1>
+    <small class="animated fadeInUp title-animation">multi column</small>
+    <div id="article_bubun" class="animated fadeInUp article-animation">
+      <img class="big_img_sub" src="img/multi_column_1.jpg" alt="">
+      <small>出展：https://www.yahoo.co.jp/</small>
+      <p>複数のコンテンツを並べることの多いマルチカラムは、ブログやポータルサイト等の数多くのサイトで見られるデザインである。</p>
+      <p>このデザインは、他ページへの導線やバナー広告等の設置といった点から、ユーザーの回遊性を高める特徴がある。そのため、数多くの記事や様々なコンテンツを扱うブログやポータルサイトのようなコンテンツ量の多いサイトに適したレイアウトと言える。</p>
+      <p>しかし、その欠点として挙げられるのが、複数のカラムの設置によるメインコンテンツへの集中力の持続がしにくくなっていることである。</p>
+      <p>これらの欠点を解消するための「最低限の要素」として、ここでは「要素ごとの余白」「コンテンツの判別」を挙げる。</p>
+     <h2>要素ごとの余白</h2>
+     <div id="sakurei" class="z-depth-1">
+       <h3>文章のカーニング・行間の調整</h3>
+      <div class="multi_letter">
+        <h1>H1の見出し</h1>
+        <h2>H2の見出し</h2>
+        <h3>H3の見出し</h3>
+        <h4>H4の見出し</h4>
+        <h5>H5の見出し</h5>
+        <h6>H6の見出し</h6>
+        <p>普通の文章</p>
+       <a class="cord_button">コードを見る</a>
+       <pre class="prettyprint">
+         .multi_letter h1{
+           letter-spacing: -1.6px;
+           line-height: 40px;
+         }
+
+         .multi_letter h2{
+           letter-spacing: -0.4px;
+           line-height: 36px;
+         }
+
+         .multi_letter h3{
+           letter-spacing: 0px;
+           line-height: 36px;
+         }
+
+         .multi_letter h4{
+           letter-spacing: 0.24px;
+           line-height: 36px;
+         }
+
+         .multi_letter h5{
+           letter-spacing: 0px;
+           line-height: 36px;
+         }
+
+         .multi_letter h6{
+           letter-spacing: 0.16px;
+           line-height: 36px;
+         }
+
+         .multi_letter p{
+           letter-spacing: 0.04px;
+           line-height: 20px;
+         }
+       </pre>
+     </div>
+   </div>
+      <p>ポータルサイトやブログサイトでは、そのレイアウトの多さから、コンテンツの中身が過密になることがある。</p>
+      <p>伝えたいことを伝えつつ、ユーザーにコンテンツのことを理解してもらうには「見た目」がより重要となってくる。</p>
+      <p>その一つとして「文字の可読性」を上げることが、それを叶える手段として存在する。</p>
+      <p>letter-spacingは文字間を調節するプロパティで、初期値は0となっている。</p>
+      <p>マテリアルデザインではh1~6のような見出しからcaptionタグのようなものまで、細かいカーニングや行間が決められている。</p>
+      <p>line-heightは行間を調節するプロパティで、本文だけでなく見出しにも反映することが推奨されている。</p>
+      <p>今回はline-heightで調整しているが、margin等でも調整は可能である。</p>
+     <br>
+     <div id="sakurei" class="z-depth-1">
+       <h3>クリック可能要素の最低限の大きさ</h3>
+       <p>.multi_icon1</p>
+         <a class="multi_icon1" href="#">I</a>
+        <p>.multi_icon2</p>
+         <a class="multi_icon2" href="#">I</a>
+       <a class="cord_button">コードを見る</a>
+       <pre class="prettyprint">
+         .multi_icon1{
+           background: #F1F1F1;
+           color: #000000;
+           display: block;
+           border-radius: 10px;
+           width: 40px;
+           height: 40px;
+           margin: 8px;
+           padding: 8px;
+           text-align: center;
+           text-decoration: none;
+           box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);/*浮き上がるように*/
+         }
+         .multi_icon1:hover{
+           box-shadow: 0 4px 10px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);/*影*/
+         }
+
+         .multi_icon2{
+           background: #F1F1F1;
+           color: #000000;
+           display: block;
+           border-radius: 10px;
+           width: 20px;
+           height: 20px;
+           margin: 12px;
+           padding: 4px;
+           text-align: center;
+           text-decoration: none;
+           box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);/*浮き上がるように*/
+         }
+         .multi_icon2:hover{
+           box-shadow: 0 4px 10px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);/*影*/
+         }
+       </pre>
+     </div>
+     <p>また、マテリアルデザインではクリック可能要素の最低限の大きさも設定されている。</p>
+     <p>この大きさはPCだけでなくスマホ・タブレットにおいても通じる。</p>
+     <h2>コンテンツの判別</h2>
+     <div id="sakurei" class="z-depth-1">
+       <h3>コンテンツのシャドウ</h3>
+       <p>最下層</p>
+         <a class="multi_shadow_button multi_shadow_0" href="#"></a>
+       <p>1枚目</p>
+         <a class="multi_shadow_button multi_shadow_1" href="#"></a>
+       <p>2枚目</p>
+         <a class="multi_shadow_button multi_shadow_2" href="#"></a>
+       <p>3枚目</p>
+         <a class="multi_shadow_button multi_shadow_3" href="#"></a>
+       <p>4枚目</p>
+         <a class="multi_shadow_button multi_shadow_4" href="#"></a>
+        <br>
+        <br>
+       <a class="cord_button">コードを見る</a>
+       <pre class="prettyprint">
+         /* 基本のボタン */
+         .multi_shadow_button{
+           background: #F1F1F1;
+           color: #000000;
+           display: block;
+           border-radius: 10px;
+           width: 80px;
+           height: 80px;
+           margin: 8px;
+           padding: 8px;
+           text-align: center;
+           text-decoration: none;
+         }
+
+         /* 影 */
+         .multi_shadow_0{
+           box-shadow: none !important;
+         }
+         .multi_shadow_1{
+           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+         }
+         .multi_shadow_2{
+           box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+         }
+         .multi_shadow_3{
+           box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         }
+         .multi_shadow_4{
+           box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+         }
+       </pre>
+     </div>
+    　<p>マルチカラムではヘッダーとコンテンツだけではなく、サブメニューなどのようなコンテンツとは別の要素も多くなる。</p>
+      <p>そのため、それらをシャドウ等の装飾で判別させ、どれがどのぐらいの重要度なのか？ということを理解させる必要が出てくる。</p>
+      <p>マテリアルデザインでは「物質の重なり」を再現することで重要度を表現しているため、上記装飾では最下層～○枚目という言い回しを使用している。</p>
+    </div>
+  </div>
+  <div id="footer">©Copyright shinji maki</div>
+</div>
+</body>
+</html>

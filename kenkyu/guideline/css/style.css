@@ -1,0 +1,547 @@
+/* メインカラー:#607D8B
+サブカラー:#455A64
+アクセントカラー:#FDD835
+グレー:#EEEEEE;*/
+
+/* 装飾 */
+h3{
+  border-top: dotted 1px #455A64;
+  border-bottom: dotted 1px #455A64;
+}
+
+/* シャドウ */
+.z-depth-0 {
+  box-shadow: none !important;
+}
+.z-depth-1{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.z-depth-1-half{
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* グリッド関係 */
+html, body {
+  height: 100%;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+}
+
+p{
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* font-family: -apple-system, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-feature-settings: "palt"; /* プロポーショナルメトリクスを有効に */ */
+}
+
+/* グリッド関係 */
+.my-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 52px 1fr 52px;
+  width: 100%;
+  height: 100%;
+}
+
+/* ヘッダー */
+#header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+  background: #607D8B;
+}
+
+#header h1{
+  margin-top: 8px;
+  margin-left: 8px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/* サイドメニュー */
+#sideber {
+  grid-column: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+#sideber h3{
+  text-align: center;
+}
+#sideber ul{
+  padding-left: 0px;
+}
+#sideber li{
+  list-style: none;
+  padding: 8px 4px 8px 12px;
+  margin: 0px;
+  transition: .5s;
+}
+#sideber li:hover{
+  background: #EEEEEE;
+  color: #000000;
+}
+
+#sideber a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.choice_page{
+  font-weight: bold;
+}
+
+/* コンテンツ */
+#contents{
+  grid-column: 2;
+  grid-row: 2;
+  padding: 24px;
+  overflow-y: scroll;
+}
+
+.top_title{
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+svg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+text {
+    /* 色はお好みで */
+    stroke: black;
+    /* 文字の中身は塗りつぶさない */
+    fill: black;
+    /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
+    font-size: 100px;
+    /* 100%だと最後まで表示されないので多めに設定する */
+    stroke-dasharray: 150% 150%;
+    /* 線が細いほうがアニメーションが綺麗なので0.5pxを指定 */
+    stroke-width: 0.5px;
+    -webkit-animation: stroke-anim 4s 3s ease-in;
+    animation: stroke-anim 4s 3s ease-in;
+
+}
+@-webkit-keyframes stroke-anim {
+  0% {
+    /* 100%だと最後まで表示されないので多めに設定する */
+    stroke-dashoffset: 150%;
+    fill:transparent;
+  }
+  50% {
+    fill:transparent;
+  }
+  100% {
+    stroke-dashoffset: 0%;
+    fill:black;
+  }
+}
+
+@keyframes stroke-anim {
+  0% {
+    /* 100%だと最後まで表示されないので多めに設定する */
+    stroke-dashoffset: 150%;
+    fill:transparent;
+  }
+  50% {
+    fill:transparent;
+  }
+  100% {
+    stroke-dashoffset: 0%;
+    fill:black;
+  }
+}
+
+
+#footer{
+  grid-column: 2;
+  grid-row: 3;
+  text-align: center;
+}
+
+#article_bubun{
+ width: 980px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+/* 画像調整 */
+.big_img{
+  width: 30%;
+  height: auto;
+}
+
+.big_img_sub{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* アニメーション用 */
+.title-animation{
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-delay: 1s;
+}
+.article-animation{
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-duration: 2.0s;
+  animation-delay: 2.0s;
+}
+.top1-animation{
+  -webkit-animation-duration: 1.5s;
+  animation-duration: .5s;
+  -webkit-animation-duration: 1s;
+  animation-delay: 5s;
+}
+
+.top2-animation{
+  -webkit-animation-duration: 1.5s;
+  animation-duration: .5s;
+  -webkit-animation-duration: 1s;
+  animation-delay: 6s;
+}
+
+#firstimg{
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  position: relative;
+}
+#firstimg p{
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%); */
+  height: 100px;
+  text-align: center;/*一応BOX内の文字も中央寄せ*/
+  font-size: 35px;
+  margin-top: 120px;
+}
+#firstimg img{
+  text-align: center;/*一応BOX内の文字も中央寄せ*/
+  font-size: 50px;
+}
+
+#kukuri_img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+
+}
+
+/* 装飾パーツ */
+pre{
+  display: none;
+}
+
+.cord{
+  color: #FDD835;
+  margin-left: 20px;
+  transition: .5s;
+  padding: 5px;
+}
+.cord:hover{
+  background: #F1F1F1;
+  color: #000000;
+}
+
+.cord_button{
+  border: solid 1px #FDD835;
+  transition: .5s;
+  width: 100px;
+  height: auto;
+  padding: 5px;
+  display: block;
+  margin-top: 20px;
+}
+.cord_button:hover{
+  border: solid 1px #FFFFFF;
+  background: #F1F1F1;
+  color: #000000;
+}
+
+#sakurei{
+  height: auto;
+  position: relative;
+  padding: 10px 20px 20px 20px;
+  text-decoration: none;
+}
+#sakurei::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 14px solid #FDD835;
+  border-right: 14px solid transparent;
+}
+
+.single_button{
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.single_hover{
+  background: #607D8B;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: 0.05em;/*字間*/
+  padding: 0.2em 1em;/*ボタン内の余白*/
+  border-radius: 3px;/*角の丸み*/
+  transition: .5s;
+}
+.single_hover:hover{
+ background: #FFFFFF;
+ color: #607D8B;
+ border: solid 0.5px #607D8B;
+}
+
+
+.single_shadow{
+  background: #607D8B;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: 0.05em;/*字間*/
+  padding: 0.2em 1em;/*ボタン内の余白*/
+  border-radius: 3px;/*角の丸み*/
+  transition: .5s;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);/*浮き上がるように*/
+}
+.single_shadow:hover{
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);/*影*/
+}
+.single_accent{
+  background: #FDD835;
+  color: #000000;
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: 0.05em;/*字間*/
+  padding: 0.2em 1em;/*ボタン内の余白*/
+  border-radius: 3px;/*角の丸み*/
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);/*浮き上がるように*/
+}
+.single_accent:hover{
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);/*影*/
+}
+
+.multi_icon1{
+  background: #F1F1F1;
+  color: #000000;
+  display: block;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);/*浮き上がるように*/
+}
+.multi_icon1:hover{
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);/*影*/
+}
+
+.multi_icon2{
+  background: #F1F1F1;
+  color: #000000;
+  display: block;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  margin: 12px;
+  padding: 4px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);/*浮き上がるように*/
+}
+.multi_icon2:hover{
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);/*影*/
+}
+
+
+.multi_letter h1{
+  letter-spacing: -1.5px;
+}
+
+.multi_letter h2{
+  letter-spacing: -0.5px;
+}
+
+.multi_letter h3{
+  letter-spacing: 0px;
+  border: solid 0px;
+}
+
+.multi_letter h4{
+  letter-spacing: 0.25px;
+}
+
+.multi_letter h5{
+  letter-spacing: 0px;
+}
+
+.multi_letter h6{
+  letter-spacing: 0.15px;
+}
+
+.multi_letter p{
+  letter-spacing: 0.02px;
+}
+
+
+.multi_shadow_button{
+  background: #F1F1F1;
+  color: #000000;
+  display: block;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  margin: 8px;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+.multi_shadow_0{
+  box-shadow: none !important;
+}
+.multi_shadow_1{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.multi_shadow_2{
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.multi_shadow_3{
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.multi_shadow_4{
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.multi_shadow_5{
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+}
+.card {
+  width: 344px;
+  height: 510px;
+  margin: 16px;
+  background:#FFFFFF;
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  transition: .3s all;
+  position: relative;
+}
+.card:hover{
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.card img{
+  width: 100%;
+  height: 255px;
+  object-fit: cover;
+  padding: 0;
+}
+
+.card h1{
+  padding-left: 10px;
+}
+
+ .card h3{
+   padding-left: 10px;
+   margin-top: -5px;
+ }
+
+ .article_sent{
+   padding: 24px;
+   margin-top: -20px;
+   margin-bottom: -10px;
+ }
+
+
+ .card_link{
+   margin: 16px;
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   color: #00796B;
+   text-decoration: none;
+   padding: 8px;
+   border: 1px solid #00796B;
+   transition: .5s;
+ }
+ .card_link:hover{
+   color: #FFFFFF;
+   background: #00796B;
+ }
+
+ .card_mini {
+   width: 344px;
+   height: 148px;
+   margin: 16px;
+   background:#FFFFFF;
+   display: block;
+   text-decoration: none;
+   color: #000000;
+   transition: .3s all;
+   position: relative;
+ }
+ .card_mini:hover{
+     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+ }
+
+ .card_mini img{
+   width: 88px;
+   height: 88px;
+   object-fit: cover;
+   padding: 10px;
+   float: right;
+ }
+
+ .card h1{
+   padding-left: 10px;
+ }
+
+  .card_mini h3{
+    margin-top: 4px;
+    margin-bottom: -10px;
+    border: solid 0px;
+  }
+
+  .article_sent_mini{
+    width: 190px;
+    padding: 8px 12px;
+    float: left;
+  }
+
+  .card_link_mini{
+    margin:-16px 0px 8px 8px;
+    color: #00796B;
+    text-decoration: none;
+    padding: 2px 4px;
+    border: 1px solid #00796B;
+    transition: .5s;
+    clear: both;
+  }
+  .card_link_mini:hover{
+    color: #FFFFFF;
+    background: #00796B;
+  }

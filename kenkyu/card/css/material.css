@@ -1,11 +1,12 @@
-　/* 文字(黒)： rgba(0, 0, 0, 0.87);
+/* 文字(黒)： rgba(0, 0, 0, 0.87);
 文字(白)：#FFFFFFFF
 メインカラー：#F44336
 サブカラー1(濃い)：#E53935
 サブカラー2(薄い)：#EF9A9A
 アクセント：#FDD835
-白：#F1F1F1
-シャドウ：#DDDDDD */
+白：#FAFAFA
+シャドウ：#DDDDDD
+*/
 
 
 
@@ -23,7 +24,7 @@ body{
   height: 100vh;
   margin: 0;
   color: #333333;
-  background: #F1F1F1
+  background: #FAFAFA
 }
 
 
@@ -251,16 +252,21 @@ body{
   padding-left: 10px;
 }
 
+.grid_yoko2 h2{
+  /* padding-right: -12px; */
+}
+
  .grid_yoko2 h3{
    padding-left: 10px;
  }
 
 .grid_yoko2 p{
   /* float: left; */
+  padding-right: -12px;
 }
 
 .article_sent{
-  padding: 10px;
+  padding: 24px;
   margin-top: -20px;
   margin-bottom: -10px;
 }
@@ -276,7 +282,7 @@ body{
   transition: .5s;
 }
 .card_link:hover{
-  background: #F1F1F1;
+  background: #FAFAFA;
 }
 
 .card_link_sma{
@@ -290,34 +296,7 @@ body{
   transition: .5s;
 }
 .card_link_sma:hover{
-  background: #F1F1F1;
-}
-
-/* 個別記事 */
-#article{
-  width:980px;
-}
-
-#article img{
-  max-width: 70%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#back_top{
-  background: #F44336;
-  text-align: center;
-  display: block;
-  width: 100px;
-  padding: 10px;
-  margin: 10px 10px 20px 10px;
-  text-decoration: none;
-  color: #FFFFFF;
-}
-#back_top:hover{
-  opacity: 0.7;
-  transition: 0.5s;
+  background: #FAFAFA;
 }
 
 
@@ -329,30 +308,20 @@ body{
 }
 
 
-.grid_yoko2 h1{
-  padding-left: 10px;
-}
-
- .grid_yoko2 h3{
-   padding-left: 10px;
- }
-
-.grid_yoko2 p{
-  /* float: left; */
-}
-
-.article_sent{
-  padding: 10px;
-  margin-top: -20px;
-  margin-bottom: -10px;
-}
-
 /* 個別記事 */
 #article{
   width:980px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  padding: 12px 24px 12px 24px;
+  border-radius: 3px;
 }
+#article:hover{
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);/*浮き上がるように*/
+}
+
 
 #article img{
   max-width: 70%;
@@ -386,24 +355,24 @@ body{
 /* コメントフォーム */
 .button{
   display: inline-block;
-  background-color: #FFFFFF;/*背景色*/
-  color: #000000;
+  color: #00796B;
   font-size: 1em;/*文字サイズ*/
+  font-weight: bold;
   line-height: 1;
   text-decoration: none;
   letter-spacing: 0.05em;/*字間*/
   padding: 0.2em 1em;/*ボタン内の余白*/
+  border: solid 1px #FAFAFA;
   border-radius: 3px;/*角の丸み*/
   padding: 10px 10px;
   clear: both;
   margin-bottom: 30px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);/*影*/
-  -webkit-tap-highlight-color: transparent;
   transition: .3s ease-out;/*変化を緩やかに*/
 }
 .button:hover{
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+   background: #FAFAFA;
 }
+
 
 /* フォーム */
 .cp_iptxt {

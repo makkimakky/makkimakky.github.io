@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>MINIMUM USABILITY DESIGN</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="js/script.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+<body>
+<div class="my-grid">
+  <div id="header" class="z-depth-1-half">
+    <h1>MINIMUM USABILITY DESIGN</h1>
+  </div>
+  <div id="sideber" class="z-depth-1">
+    <h3>MENU</h3>
+    <ul>
+      <a href="about.html"><li>ガイドラインについて</li></a>
+      <a href="single_column.html"><li class="choice_page">シングルカラム</li></a>
+      <a href="multi_column.html"><li>マルチカラム</li></a>
+      <a href="card_layout.html"><li>カード型レイアウト</li></a>
+    </ul>
+  </div>
+  <div id="contents">
+    <h1 class="animated fadeInUp title-animation">シングルカラム</h1>
+    <small class="animated fadeInUp title-animation">single column</small>
+    <div id="article_bubun" class="animated fadeInUp article-animation">
+     <img class="big_img" src="img/single_column_1.png" alt="">
+     <small>出展： https://creators.uuum.jp/</small>
+     <br>
+     <p>シングルカラムのような「コンテンツ中心のデザイン」では、コンテンツを伝えるだけではなく、ユーザーインタフェースにも気を配る必要がある。</p>
+     <p>何故ならば、WEBサイトの見やすさや使いやすさといった要素は、そのままそのサイトの「親しみ」にへと直結する。つまり、コンテンツ中心であっても、ユーザーインタフェースによってその印象は変わってしまうからである。</p>
+     <p>ディスプレイを最大限に使うことのできるシングルカラムでは、全体的にシンプルな構成になりやすい。そのため、どこがクリック出来るかといった「クリック要素の区別」が必要となってくる。</p>
+     <br>
+      <h2>クリック要素の判別</h2>
+     <div id="sakurei" class="z-depth-1">
+       <h3>ホバーエフェクト</h3>
+       <a class="single_button single_hover" href="#">BUTTON</a>
+       <a class="cord">コードを見る</a>
+       <pre class="prettyprint">
+         .single_hover{
+           background: #607D8B;
+           color: #FFFFFF;
+           text-decoration: none;
+           font-size: 1em;
+           letter-spacing: 0.05em;/*字間*/
+           padding: 0.2em 1em;/*ボタン内の余白*/
+           border-radius: 3px;/*角の丸み*/
+           transition: .5s;
+         }
+         .single_hover:hover{
+          background: #FFFFFF;
+          color: #607D8B;
+          border: solid 0.5px #607D8B;
+         }
+       </pre>
+       <h3>シャドウ</h3>
+       <a class="single_button single_shadow" href="#">BUTTON</a>
+       <a class="cord">コードを見る</a>
+       <pre class="prettyprint">
+         .single_shadow{
+           background: #607D8B;
+           color: #FFFFFF;
+           text-decoration: none;
+           font-size: 1em;
+           letter-spacing: 0.05em;/*字間*/
+           padding: 0.2em 1em;/*ボタン内の余白*/
+           border-radius: 3px;/*角の丸み*/
+           transition: .5s;
+           box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);/*浮き上がるように*/
+         }
+         .single_shadow:hover{
+           box-shadow: 0 4px 10px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);/*影*/
+         }
+       </pre>
+       <h3>アクセントカラー</h3>
+       <a class="single_button single_accent" href="#">BUTTON</a>
+       <a class="cord">コードを見る</a>
+       <pre class="prettyprint">
+         .single_accent{
+           background: #FDD835;
+           color: #000000;
+           text-decoration: none;
+           font-size: 1em;
+           letter-spacing: 0.05em;/*字間*/
+           padding: 0.2em 1em;/*ボタン内の余白*/
+           border-radius: 3px;/*角の丸み*/
+           box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);/*浮き上がるように*/
+         }
+         .single_accent:hover{
+           box-shadow: 0 4px 10px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);/*影*/
+         }
+       </pre>
+     </div>
+     <br>
+     <p>クリック要素の判別をデザインするには、ホバーエフェクト、シャドウ、アクセントカラーといった手法が効果的である。</p>
+     <p>特にホバーエフェクトとシャドウは視覚的にも触覚的にもわかりやすく、WEBを扱うのに慣れていない人でも操作を理解させやすい装飾と言える。</p>
+     <p>加えて、色をあまり使わないデザインにおいても反映させやすいため、あらゆるデザインに汎用的に使うことができる。</p>
+     <p>ただしアクセントカラーに関しては、その色が使われた要素によってデザイン性が下がってしまう場合があるため、使用する際にはよく検討する必要がある。</p>
+     <br>
+
+    </div>
+  </div>
+  <div id="footer">©Copyright shinji maki</div>
+</div>
+</body>
+</html>
